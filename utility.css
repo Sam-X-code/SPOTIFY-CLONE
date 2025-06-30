@@ -1,0 +1,36 @@
+/* Dark Theme Scrollbar for WebKit Browsers */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 6px;
+  border: 2px solid #1e1e1e;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888;
+}
+
+/* Dark Theme Scrollbar for Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1e1e1e;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.invert{
+    filter: invert(1);
+}

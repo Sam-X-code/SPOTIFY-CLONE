@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="container flex">
+
+        <div class="left">
+
+            <svg class="invert close" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <line x1="18" y1="6" x2="6" y2="18" stroke="black" stroke-width="2" stroke-linecap="round" />
+                <line x1="6" y1="6" x2="18" y2="18" stroke="black" stroke-width="2" stroke-linecap="round" />
+            </svg>
+
+
+            <div class="top">
+                <img class="invert logo" src="logo.svg" alt="" srcset="">
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="" srcset="">Home</li>
+                    <li><img class="invert" src="search.svg" alt="" srcset="">Search</li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div class="heading">
+                    <img class="invert" src="playlist.svg " alt="" srcset="">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songlist">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <header>
+                <nav>
+                    <div class="arrow">
+                        <svg class="invert hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                            height="24" color="#000000" fill="none">
+                            <path d="M4 5L20 5" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M4 12L20 12" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                            <path d="M4 19L20 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="gray"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="gray"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <div class="buttons">
+                        <button class="signbtn">Sign up</button>
+                        <button class="logbtn">Log In</button>
+                    </div>
+                </nav>
+            </header>
+            <div class="spotifyplaylist">Spotify Playlists</div>
+            <div class="cardcontainer">
+                <div class="card">
+                    <svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"
+                        fill="none">
+                        <circle cx="12" cy="12" r="10" fill="green" />
+                        <path
+                            d="M9.5 11.2V12.8C9.5 14.3195 9.5 15.0791 9.9558 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.3259C11.0348 8.6465 10.4115 8.3068 9.9558 8.6138C9.5 8.9209 9.5 9.6805 9.5 11.2Z"
+                            fill="black" />
+                    </svg>
+                    <img src="th.jpg" alt="">
+                    <h3>Happy Hits!</h3>
+                    <p>Hits to boost your mood and fills with happiness</p>
+                </div>
+                <div class="card">
+                    <svg class="play" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="48" height="48"
+                        fill="none">
+                        <circle cx="12" cy="12" r="10" fill="green" />
+                        <path
+                            d="M9.5 11.2V12.8C9.5 14.3195 9.5 15.0791 9.9558 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.3259C11.0348 8.6465 10.4115 8.3068 9.9558 8.6138C9.5 8.9209 9.5 9.6805 9.5 11.2Z"
+                            fill="black" />
+                    </svg>
+                    <img src="th.jpg" alt="">
+                    <h3>Happy Hits!</h3>
+                    <p>Hits to boost your mood and fills with happiness</p>
+                </div>
+            </div>
+            <div class="controller">
+                <div class="abovebar">
+                    <div class="songinfo"></div>
+                    <div class="playbar">
+                        <img id="prev" src="prevsong.svg" alt="">
+                        <img id="play" src="play.svg" alt="">
+                        <img id="next" src="nextsong.svg" alt="">
+                    </div>
+                    <div class="vol">
+                        <div class="songtime"></div>
+                        <div class="volimg">
+                            <svg class="invert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                height="24" color="#000000" fill="none">
+                                <path
+                                    d="M14 14.8135V9.18646C14 6.04126 14 4.46866 13.0747 4.0773C12.1494 3.68593 11.0603 4.79793 8.88232 7.02192C7.75439 8.17365 7.11085 8.42869 5.50604 8.42869C4.10257 8.42869 3.40084 8.42869 2.89675 8.77262C1.85035 9.48655 2.00852 10.882 2.00852 12C2.00852 13.118 1.85035 14.5134 2.89675 15.2274C3.40084 15.5713 4.10257 15.5713 5.50604 15.5713C7.11085 15.5713 7.75439 15.8264 8.88232 16.9781C11.0603 19.2021 12.1494 20.3141 13.0747 19.9227C14 19.5313 14 17.9587 14 14.8135Z"
+                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M17 9C17.6254 9.81968 18 10.8634 18 12C18 13.1366 17.6254 14.1803 17 15"
+                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M20 7C21.2508 8.36613 22 10.1057 22 12C22 13.8943 21.2508 15.6339 20 17"
+                                    stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                            </svg>
+                            <div class="range"><input class="invert" type="range" name="volume" id=""></div>  
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="seekbar">
+                    <div class="circle"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
